@@ -1,0 +1,60 @@
+/* Components */
+@import url("https://fonts.googleapis.com/css?family=Lora:700");
+.c-header {
+  font-family: 'Lora', serif;
+  height: 70vh;
+  font-size: 1rem;
+  overflow: hidden;
+  position: relative; }
+  .c-header__bgContainer {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  .c-header__bgImage {
+    pointer-events: none;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; }
+  .c-header__heading {
+    font-size: 4em;
+    margin: 0;
+    color: #FFFFFF;
+    padding: .2em 0;
+    border-top: 4px solid #FFFFFF;
+    border-bottom: 4px solid #FFFFFF; }
+  .c-header__headingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; }
+  .c-header__grabber {
+    position: relative;
+    z-index: 10;
+    bottom: 10em;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #e9e9e9; }
+  .c-header:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 12em solid #FFFFFF;
+    position: absolute;
+    border-right: 50vw solid transparent;
+    bottom: 0;
+    left: 0;
+    z-index: 1; }
+  .c-header:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 12em solid #FFFFFF;
+    position: absolute;
+    border-left: 50vw solid transparent;
+    bottom: 0;
+    right: 0;
+    z-index: 1; }
